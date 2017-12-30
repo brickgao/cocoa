@@ -30,6 +30,21 @@ header {
   align-items: center;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a:link, a:visited {
+  color: #744720;
+}
+
+a:hover, a:active {
+  color: #c28d5f;
+}
+
 li.entry > a:link, li.entry > a:visited {
   color: #222;
 }
@@ -49,24 +64,38 @@ li.entry {
   display: inline;
 }
 
+.footer-msg {
+  color: #777;
+  font-size: 60%;
+  font-family: 'PT Sans Narrow';
+}
+
 @media (max-width: 450px) {
   header {
-    margin: 25px 10vw 0 10vw;
+    margin: 25px 10vw;
   }
 
   object.logo {
     width: 35px;
     height: 35px;
   }
+
+  footer {
+    margin: 0 10vw;
+  }
 }
 
 @media (min-width: 450px) {
   header {
-    margin: 50px 17.5vw 0 17.5vw;
+    margin: 50px 17.5vw;
   }
 
   object.logo {
     width: 50px;
     height: 50px;
+  }
+
+  footer {
+    margin: 50px 17.5vw;
   }
 }

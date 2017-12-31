@@ -165,6 +165,24 @@ li.post-tag-list-item, li.post-category-list-item {
   max-width: 100%;
 }
 
+.post-content > p > img {
+  width: 100%;
+}
+
+code, pre {
+  font-family: "Monaco", "Bitstream Vera Sans Mono", "Lucida Console", "Terminal";
+  color: #f8f8f2;
+  font-size: 0.8em;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+code {
+  padding: 1.5px;
+  border-radius: 2px;
+  background: #3a3c42;
+}
+
 @media (max-width: 450px) {
   header {
     padding: 30px 10vw 10px 10vw;

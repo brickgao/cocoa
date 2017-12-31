@@ -125,6 +125,46 @@ span.current {
   font-family: 'PT Sans Narrow', 'Microsoft YaHei', 'Hiragino Sans GB';
 }
 
+.post > .post-title {
+  font-size: 150%;
+}
+
+.post > .post-date {
+  color: #777;
+  font-size: 85%;
+  padding-top: 3px;
+}
+
+.post > .post-tags, .post > .post-categories {
+  padding-top: 3px;
+}
+
+li.post-tag-list-item:before, li.post-category-list-item:before {
+  height: 15px;
+  width: 15px;
+  margin-right: 2.5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li.post-tag-list-item:before {
+  content: url('/media/label.svg');
+}
+
+li.post-category-list-item:before {
+  content: url('/media/category.svg');
+}
+
+li.post-tag-list-item, li.post-category-list-item {
+  display: inline;
+  font-size: 85%;
+  margin: 0 10px 0 0;
+}
+
+.post-content {
+  max-width: 100%;
+}
+
 @media (max-width: 450px) {
   header {
     padding: 30px 10vw 10px 10vw;

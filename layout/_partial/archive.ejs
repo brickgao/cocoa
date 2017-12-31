@@ -1,3 +1,12 @@
+<% if (is_category()) { %>
+  <div class="category-name">
+    <%= __('category') + ': ' + page.category %>
+  </div>
+<% } else if (is_tag()) { %>
+  <div class="tag-name">
+    <%= __('tag') + ': ' + page.tag %>
+  </div>
+<% } %>
 <div class="posts-list">
   <% page.posts.each(function(post, i) { %>
     <div class="post-summary">
@@ -10,6 +19,7 @@
     </div>
   <% }) %>
 </div>
+<% if (page.total > 1) { %>
 <div class="paginator">
   <% var prev_text = "&laquo; ";var next_text = " &raquo;"%>
   <%- paginator({
@@ -17,3 +27,4 @@
     next_text: next_text
   }) %>
 </div>
+<% } %>

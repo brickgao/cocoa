@@ -111,6 +111,12 @@ span.current {
   color: #777;
 }
 
+.category-name, .tag-name {
+  color: #777;
+  font-size: 110%;
+  font-family: 'PT Sans Narrow', 'Microsoft YaHei', 'Hiragino Sans GB';
+}
+
 @media (max-width: 450px) {
   header {
     margin: 30px 10vw 20px 10vw;
@@ -127,6 +133,10 @@ span.current {
 
   .posts-list, .paginator {
     margin: 20px 12.5vw;
+  }
+
+  .category-name, .tag-name {
+    margin: 0 12.5vw;
   }
 }
 
@@ -146,5 +156,9 @@ span.current {
 
   .posts-list, .paginator {
     margin: 25px 20vw;
+  }
+
+  .category-name, .tag-name {
+    margin: 0 20vw;
   }
 }

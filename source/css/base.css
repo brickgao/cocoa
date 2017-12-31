@@ -76,7 +76,7 @@ li.entry {
   justify-content: center;
   align-items: center;
   font-size: 100%;
-  font-family: 'PT Sans Narrow';
+  font-family: 'PT Sans Narrow', 'Microsoft YaHei', 'Hiragino Sans GB';
 }
 
 .post-summary {
@@ -96,9 +96,24 @@ li.entry {
   color: #777;
 }
 
+.paginator {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+a.extend, a.page-number, span.space, span.page-number {
+  margin: 0 3px;
+}
+
+span.current {
+  color: #777;
+}
+
 @media (max-width: 450px) {
   header {
-    margin: 25px 10vw;
+    margin: 30px 10vw 20px 10vw;
   }
 
   object.logo {
@@ -107,17 +122,17 @@ li.entry {
   }
 
   footer {
-    margin: 0 10vw;
+    margin: 0 10vw 10px 10vw;
   }
 
-  .posts-list {
-    margin: 25px 12.5vw;
+  .posts-list, .paginator {
+    margin: 20px 12.5vw;
   }
 }
 
 @media (min-width: 450px) {
   header {
-    margin: 50px 17.5vw;
+    margin: 50px 17.5vw 30px 17.5vw;
   }
 
   object.logo {
@@ -126,10 +141,10 @@ li.entry {
   }
 
   footer {
-    margin: 50px 17.5vw;
+    margin: 0 17.5vw 30px 17.5vw;
   }
 
-  .posts-list {
+  .posts-list, .paginator {
     margin: 25px 20vw;
   }
 }

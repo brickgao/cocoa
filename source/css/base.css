@@ -85,14 +85,14 @@ li.entry {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 7px 0;
+  margin: 7.5px 0;
 }
 
-.post-title {
-  max-width: 50vw;
+.post-summary > .post-title {
+  max-width: 45vw;
 }
 
-.post-date {
+.post-summary > .post-date {
   color: #777;
 }
 
@@ -117,9 +117,17 @@ span.current {
   font-family: 'PT Sans Narrow', 'Microsoft YaHei', 'Hiragino Sans GB';
 }
 
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'PT Sans Narrow', 'Microsoft YaHei', 'Hiragino Sans GB';
+}
+
 @media (max-width: 450px) {
   header {
-    margin: 30px 10vw 20px 10vw;
+    padding: 30px 10vw 10px 10vw;
   }
 
   object.logo {
@@ -128,21 +136,25 @@ span.current {
   }
 
   footer {
-    margin: 0 10vw 10px 10vw;
+    padding: 15px 10vw;
   }
 
-  .posts-list, .paginator {
-    margin: 20px 12.5vw;
+  .posts-list, .post {
+    padding: 7.5px 12.5vw;
+  }
+
+  .paginator {
+    padding: 0 12.5vw;
   }
 
   .category-name, .tag-name {
-    margin: 0 12.5vw;
+    padding: 0 12.5vw;
   }
 }
 
 @media (min-width: 450px) {
   header {
-    margin: 50px 17.5vw 30px 17.5vw;
+    padding: 50px 17.5vw 20px 17.5vw;
   }
 
   object.logo {
@@ -151,14 +163,18 @@ span.current {
   }
 
   footer {
-    margin: 0 17.5vw 30px 17.5vw;
+    padding: 25px 17.5vw;
   }
 
-  .posts-list, .paginator {
-    margin: 25px 20vw;
+  .posts-list, .post {
+    padding: 7.5px 20vw;
+  }
+
+  .paginator {
+    padding: 0 20vw;
   }
 
   .category-name, .tag-name {
-    margin: 0 20vw;
+    padding: 0 20vw;
   }
 }

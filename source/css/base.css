@@ -183,6 +183,15 @@ code {
   background: #3a3c42;
 }
 
+ol {
+  padding: 0 0 0 30px;
+}
+
+ol > li {
+  list-style: inherit;
+  word-break: break-all;
+}
+
 @media (max-width: 450px) {
   header {
     padding: 30px 10vw 10px 10vw;

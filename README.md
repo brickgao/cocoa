@@ -30,6 +30,7 @@ git pull
 fancybox: true
 ```
 
+- **rss** - RSS link
 - **fancybox** - Enable [Fancybox]
 
 [Hexo]: https://hexo.io/

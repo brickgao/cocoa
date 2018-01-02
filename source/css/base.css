@@ -117,7 +117,7 @@ span.current {
   font-family: 'PT Sans Narrow', 'Microsoft YaHei', 'Hiragino Sans GB';
 }
 
-.post {
+.post, .page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,7 +125,7 @@ span.current {
   font-family: 'PT Sans Narrow', 'Microsoft YaHei', 'Hiragino Sans GB';
 }
 
-.post > .post-title {
+.post > .post-title, .page > .page-title {
   font-size: 150%;
 }
 
@@ -165,8 +165,16 @@ li.post-tag-list-item, li.post-category-list-item {
   max-width: 100%;
 }
 
-.post-content > p > img {
+.post-content img {
   width: 100%;
+}
+
+#img-title {
+  margin: 0;
+  padding: 2.5px 0 0 0;
+  color: #777;
+  font-size: 80%;
+  text-align: center;
 }
 
 code, pre {
@@ -178,8 +186,8 @@ code, pre {
 }
 
 code {
-  padding: 1.5px;
-  border-radius: 2px;
+  padding: 2px;
+  border-radius: 4px;
   background: #3a3c42;
 }
 
@@ -194,6 +202,15 @@ ol > li {
 
 #disqus_thread {
   width: 100%;
+  margin-top: 30px;
+}
+
+.post-content blockquote, .page-content blockquote {
+  margin: 10px 20px;
+}
+
+.post-content a, .page-content a {
+  word-break: break-all;
 }
 
 @media (max-width: 450px) {
@@ -210,7 +227,7 @@ ol > li {
     padding: 15px 10vw;
   }
 
-  .posts-list, .post {
+  .posts-list, .post, .page {
     padding: 7.5px 12.5vw;
   }
 
@@ -237,7 +254,7 @@ ol > li {
     padding: 25px 17.5vw;
   }
 
-  .posts-list, .post {
+  .posts-list, .post, .page {
     padding: 7.5px 20vw;
   }
 

@@ -26,8 +26,14 @@ git pull
 ## Configuration
 
 ``` yml
+# Header
+rss: /feed.xml
+
 # Content
 fancybox: true
+
+# Miscellaneous
+favicon: /favicon.ico
 ```
 
 - **rss** - RSS link

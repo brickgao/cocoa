@@ -32,6 +32,7 @@ fancybox: true
 
 - **rss** - RSS link
 - **fancybox** - Enable [Fancybox]
+- **favicon** - Favicon path
 
 [Hexo]: https://hexo.io/
 [Fancybox]: http://fancyapps.com/fancybox/

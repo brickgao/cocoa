@@ -1,3 +1,5 @@
+@import url('https://fonts.lug.ustc.edu.cn/css?family=PT+Sans+Narrow|Source+Code+Pro');
+
 body {
   margin: 0;
   padding: 0;
@@ -89,7 +91,7 @@ li.entry {
 }
 
 .post-summary > .post-title {
-  max-width: 45vw;
+  max-width: 40vw;
 }
 
 .post-summary > .post-date {
@@ -178,7 +180,7 @@ li.post-tag-list-item, li.post-category-list-item {
 }
 
 code, pre {
-  font-family: "Monaco", "Bitstream Vera Sans Mono", "Lucida Console", "Terminal";
+  font-family: "Monaco", "Bitstream Vera Sans Mono", "Lucida Console", "Terminal", "Source Code Pro";
   color: #f8f8f2;
   font-size: 0.8em;
   white-space: pre-wrap;
@@ -215,7 +217,7 @@ ol > li {
 
 @media (max-width: 450px) {
   header {
-    padding: 30px 10vw 10px 10vw;
+    padding: 30px 7vw 10px 7vw;
   }
 
   object.logo {

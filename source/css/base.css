@@ -103,6 +103,7 @@ li.entry {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  font-family: 'PT Sans Narrow';
 }
 
 a.extend, a.page-number, span.space, span.page-number {
